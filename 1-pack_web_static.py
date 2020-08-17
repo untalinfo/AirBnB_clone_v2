@@ -8,6 +8,9 @@ from datetime import datetime
 
 
 def do_pack():
+    """
+    creation version pack
+    """
     try:
         date_format = "%Y%m%d%H%M%S"
         date = datetime.now()
