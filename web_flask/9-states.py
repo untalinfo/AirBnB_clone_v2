@@ -14,18 +14,19 @@ def rm_curr_SQLAlchemy(error):
     storage.close()
 
 
-@app.route('/states_list', strict_slashes=False)
-def display_states():
-    """
-    display all states in HTML page
+@app.route('/states', strict_slashes=False)
+def disp_states():
+    """ 
+    display a HTML page with all the states stored 
     """
     return render_template('9-states.html',
                            states=storage.all(State).values())
 
+
 @app.route('/states/<id>', strict_slashes=False)
-def disp_state_cities(id):
+def disp_A_state_cities(id):
     """
-    display HTML
+    Display a HTML
     """
     states = storage.all(State).values()
     a_state = None
