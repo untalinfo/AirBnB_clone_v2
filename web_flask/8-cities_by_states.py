@@ -22,6 +22,7 @@ def display_states():
     return render_template('7-states_list.html',
                            states=storage.all(State).values())
 
+
 @app.route('/cities_by_states', strict_slashes=False)
 def disp_state_cities():
     """
