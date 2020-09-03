@@ -16,8 +16,8 @@ def rm_curr_SQLAlchemy(error):
 
 @app.route('/states', strict_slashes=False)
 def disp_states():
-    """ 
-    display a HTML page with all the states stored 
+    """
+    display a HTML page with all the states stored
     """
     return render_template('9-states.html',
                            states=storage.all(State).values())
