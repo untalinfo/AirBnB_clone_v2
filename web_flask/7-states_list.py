@@ -14,7 +14,7 @@ def rm_curr_SQLAlchemy(error):
     storage.close()
 
 
-@app.route('/state_list', strict_slashes=False)
+@app.route('/states_list', strict_slashes=False)
 def display_states():
     """
     display all states in HTML page
