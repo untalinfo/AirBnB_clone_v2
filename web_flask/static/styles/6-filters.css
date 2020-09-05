@@ -18,6 +18,16 @@
 	border-right: 1px solid #DDDDDD;
 }
 
+.amenities {
+        display: inline;
+        vertical-align: middle;
+        float: left;
+        height: 100%;
+        width: 25%;
+		margin-right: 245px;
+        line-height: 20px;
+}
+
 .filter_amenities {
 	display: inline;
 	vertical-align: middle;
@@ -49,8 +59,16 @@
 	display: inline-block;
 }
 
+.amenities:hover .popover {
+        display: inline-block;
+}
+
 .filter_amenities:hover .popover {
 	display: inline-block;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 ul {
@@ -58,9 +76,6 @@ ul {
 	padding: 0px;
 	padding-bottom: 20px;
 }
-
-li {
-}	
 
 h2 {
 	font-size: 16px;
